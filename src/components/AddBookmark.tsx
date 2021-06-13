@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import { Button, TextField} from "@material-ui/core";
 import { useState } from "react";
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-
+import Swal from "sweetalert2";
 
 const ADD_BOOKMARK = gql`
   mutation addBookmark($title: String!, $url: String!) {
@@ -48,6 +48,18 @@ export default function AddBookmark({GET_BOOKMARK}) {
  })
     e.title = ""
      e.url = ""
+
+     const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+    });
+    Toast.fire({
+      icon: "success",
+      title: "Task has been saved",
+    })
 }
 
 const formSchema = Yup.object().shape({
