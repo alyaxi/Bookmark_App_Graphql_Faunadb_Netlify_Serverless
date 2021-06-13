@@ -46,7 +46,7 @@ export default function BookmarkList({ GET_BOOKMARK }) {
                    <span>{id1} : </span> {d.title}
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                      {d.url}
+                     Link:  {d.url}
           </Typography>
                 </CardContent>
               </CardActionArea>
