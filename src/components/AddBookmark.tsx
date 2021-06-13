@@ -53,7 +53,7 @@ export default function AddBookmark({GET_BOOKMARK}) {
 const formSchema = Yup.object().shape({
   title: Yup.string()
   .min(2, "Too Short")
-  .max(50, "Too Long")
+  .max(60, "Too Long")
   .required("Required"),
   url: Yup.string()
   .min(2, "Too Short")

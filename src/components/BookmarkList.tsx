@@ -51,11 +51,12 @@ export default function BookmarkList({ GET_BOOKMARK }) {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                  <Link to={d.url} style={{color:"white", textDecoration:"none"}}>
+                  <Link target="_blank" to={d.url} style={{color:"white", textDecoration:"none"}}>
                   <Button                  
                   variant="contained"
                   color="secondary"
                   style={{fontSize:"11px"}}
+                  
                 >
                   Open Bookmark
                 </Button>
