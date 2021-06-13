@@ -54,5 +54,5 @@ body{
 }
 .container-list{
     max-height: 400px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
